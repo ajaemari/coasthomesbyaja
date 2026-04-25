@@ -5,7 +5,7 @@ const { useState, useEffect, useRef, useMemo } = React;
    Icons
    ========================================================= */
 const Icon = {
-  arrow: () => <span className="arrow" aria-hidden>â</span>,
+  arrow: () => <span className="arrow" aria-hidden>→</span>,
   check: (p) => (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" {...p}>
       <path d="M2 7.5L5.5 11L12 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -83,10 +83,10 @@ function Hero({ onOpenWizard }) {
       <div className="hero__grain" />
       <div className="hero__content">
         <div className="hero__top">
-          <span className="eyebrow">San Diego Realtor Â· Est. 2011</span>
+          <span className="eyebrow">San Diego Realtor · Est. 2011</span>
           <span className="hero__loc">
-            33.0370Â° N, 117.2920Â° W
-            <small>Encinitas Â· San Diego Â· Nationwide</small>
+            33.0370° N, 117.2920° W
+            <small>Encinitas · San Diego · Nationwide</small>
           </span>
         </div>
 
@@ -97,7 +97,7 @@ function Hero({ onOpenWizard }) {
             you're moving toward.
           </h1>
           <p>
-            I'm Aja Lechowicz â San Diego Realtor and Real Estate Concierge. I list and sell across San Diego County directly, and for moves anywhere else in the U.S., I handpick the agent I'd personally call.
+            I'm Aja Lechowicz — San Diego Realtor and Real Estate Concierge. I list and sell across San Diego County directly, and for moves anywhere else in the U.S., I handpick the agent I'd personally call.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ function Hero({ onOpenWizard }) {
 function TrustBar() {
   const items = [
     ["$240M+", "In San Diego closings"],
-    ["4.98 â", "Average client rating"],
+    ["4.98 ★", "Average client rating"],
     ["14 yrs", "Active on the coast"],
     ["$0", "Cost for referral introduction"],
   ];
@@ -177,8 +177,8 @@ function Marquee() {
 function Concierge({ onOpenWizard }) {
   const steps = [
     ["01", "Tell me about your move", "Where you're heading, timeline, and what a great home feels like to you."],
-    ["02", "San Diego? I'm your Realtor.", "I list and sell on the coast directly â in person, hands-on, from first showing to closing keys."],
-    ["03", "Anywhere else? I'm your Concierge.", "I handpick the agent I'd personally call â and stay in the loop the whole way. No lead farms, ever."],
+    ["02", "San Diego? I'm your Realtor.", "I list and sell on the coast directly — in person, hands-on, from first showing to closing keys."],
+    ["03", "Anywhere else? I'm your Concierge.", "I handpick the agent I'd personally call — and stay in the loop the whole way. No lead farms, ever."],
   ];
   return (
     <section className="section" id="concierge" data-screen-label="02 Concierge">
@@ -187,7 +187,7 @@ function Concierge({ onOpenWizard }) {
           <div className="concierge__media reveal">
             <img src="assets/hero-stairs.jpg" alt="Steps down to the Pacific" />
             <div className="concierge__media-overlay">
-              <span className="concierge__feature-mark">Realtor Â· Concierge Â· DRE #01918735</span>
+              <span className="concierge__feature-mark">Realtor · Concierge · DRE #01918735</span>
               <h3 className="concierge__feature-big">
                 Your agent.<br/>Your <em>advocate</em>.
               </h3>
@@ -211,10 +211,10 @@ function Concierge({ onOpenWizard }) {
               Concierge.
             </h2>
             <p>
-              If you're buying or selling in San Diego County, I'm your Realtor â licensed, local, and genuinely invested.
+              If you're buying or selling in San Diego County, I'm your Realtor — licensed, local, and genuinely invested.
             </p>
             <p>
-              Moving somewhere else in the U.S.? That's the Concierge service â I match you with the agent I'd call myself, at no cost to you.
+              Moving somewhere else in the U.S.? That's the Concierge service — I match you with the agent I'd call myself, at no cost to you.
             </p>
             <div className="concierge__steps">
               {steps.map(([n, h, p]) => (
@@ -234,7 +234,7 @@ function Concierge({ onOpenWizard }) {
               <a className="btn btn--ghost" href="#about">Meet Aja first</a>
             </div>
             <p className="concierge__readmore">
-              Curious how it works? <a href="post.html?slug=how-the-relocation-concierge-actually-works">Read the full step-by-step â</a>
+              Curious how it works? <a href="post.html?slug=how-the-relocation-concierge-actually-works">Read the full step-by-step →</a>
             </p>
           </div>
         </div>
@@ -252,13 +252,13 @@ function MeetAja() {
       <div className="container">
         <div className="meet">
           <div className="meet__copy reveal">
-            <span className="eyebrow">San Diego Realtor Â· DRE #01918735</span>
+            <span className="eyebrow">San Diego Realtor · DRE #01918735</span>
             <h2>Aja<br/><em>Lechowicz</em></h2>
             <blockquote>
               "You already know what you want. You just need someone who knows how to get it."
             </blockquote>
             <p>
-              Buying or selling a home is one of the biggest moves you'll make â and the difference between a smooth close and a stressful one usually comes down to who's in your corner.
+              Buying or selling a home is one of the biggest moves you'll make — and the difference between a smooth close and a stressful one usually comes down to who's in your corner.
             </p>
             <p>
               Fourteen years selling in Southern California means you don't have to figure it out the hard way. You bring the vision. I bring the market knowledge, the network, and the straight talk.
@@ -278,14 +278,14 @@ function MeetAja() {
    ========================================================= */
 function Places() {
   const places = [
-    { img: "coast-aerial.jpg", name: "Encinitas", meta: "92024 Â· Coastal", slug: "encinitas" },
-    { img: "home-modern.jpg", name: "Cardiff", meta: "92007 Â· Hillside", slug: "cardiff" },
-    { img: "surfer.jpg", name: "Leucadia", meta: "92024 Â· Surf town", slug: "leucadia" },
-    { img: "home-pool.jpg", name: "Del Mar", meta: "92014 Â· Clifftop", slug: "del-mar" },
-    { img: "home-exterior.jpg", name: "Solana Beach", meta: "92075 Â· Walkable", slug: "solana-beach" },
-    { img: "neighborhood.jpg", name: "La Jolla", meta: "92037 Â· Coastal luxury", slug: "la-jolla" },
-    { img: "home-interior.jpg", name: "Carlsbad", meta: "92008 Â· Family", slug: "carlsbad" },
-    { img: "coast-sunset.jpg", name: "Oceanside", meta: "92054 Â· Pier + sand", slug: "oceanside" },
+    { img: "coast-aerial.jpg", name: "Encinitas", meta: "92024 · Coastal", slug: "encinitas" },
+    { img: "home-modern.jpg", name: "Cardiff", meta: "92007 · Hillside", slug: "cardiff" },
+    { img: "surfer.jpg", name: "Leucadia", meta: "92024 · Surf town", slug: "leucadia" },
+    { img: "home-pool.jpg", name: "Del Mar", meta: "92014 · Clifftop", slug: "del-mar" },
+    { img: "home-exterior.jpg", name: "Solana Beach", meta: "92075 · Walkable", slug: "solana-beach" },
+    { img: "neighborhood.jpg", name: "La Jolla", meta: "92037 · Coastal luxury", slug: "la-jolla" },
+    { img: "home-interior.jpg", name: "Carlsbad", meta: "92008 · Family", slug: "carlsbad" },
+    { img: "coast-sunset.jpg", name: "Oceanside", meta: "92054 · Pier + sand", slug: "oceanside" },
   ];
   return (
     <section className="section" id="places" data-screen-label="04 Places">
@@ -304,7 +304,7 @@ function Places() {
                 <h3>{p.name}</h3>
                 <span className="meta">{p.meta}</span>
               </div>
-              <span className="place__go">Explore â</span>
+              <span className="place__go">Explore →</span>
             </a>
           ))}
         </div>
@@ -324,31 +324,31 @@ function Wizard({ mode = "inline", onClose }) {
 
   const steps = [
     {
-      label: "01 / 05 Â· Intent",
+      label: "01 / 05 · Intent",
       q: "What brings you to the coast?",
       type: "options",
       key: "intent",
       options: [
         ["Buying a home", "A"],
         ["Selling a home", "B"],
-        ["Both â selling here, buying there", "C"],
+        ["Both — selling here, buying there", "C"],
         ["Just exploring, not ready yet", "D"],
       ],
     },
     {
-      label: "02 / 05 Â· Where",
+      label: "02 / 05 · Where",
       q: "Where's the move?",
       type: "options",
       key: "where",
       options: [
-        ["In San Diego â let's work together", "A"],
+        ["In San Diego — let's work together", "A"],
         ["Leaving San Diego for somewhere in the U.S.", "B"],
         ["Moving to San Diego from elsewhere", "C"],
-        ["Somewhere else entirely â I need a Realtor intro", "D"],
+        ["Somewhere else entirely — I need a Realtor intro", "D"],
       ],
     },
     {
-      label: "03 / 05 Â· Timing",
+      label: "03 / 05 · Timing",
       q: "When do you want this to happen?",
       type: "options",
       key: "timing",
@@ -361,20 +361,20 @@ function Wizard({ mode = "inline", onClose }) {
       ],
     },
     {
-      label: "04 / 05 Â· Range",
+      label: "04 / 05 · Range",
       q: "Rough price range you're working with?",
       type: "options",
       key: "range",
       options: [
-        ["$500K â $1M", "A"],
-        ["$1M â $2M", "B"],
-        ["$2M â $4M", "C"],
+        ["$500K – $1M", "A"],
+        ["$1M – $2M", "B"],
+        ["$2M – $4M", "C"],
         ["$4M+", "D"],
-        ["Selling â not sure yet", "â"],
+        ["Selling — not sure yet", "—"],
       ],
     },
     {
-      label: "05 / 05 Â· You",
+      label: "05 / 05 · You",
       q: "Where should I send your plan?",
       type: "fields",
       key: "contact",
@@ -420,10 +420,10 @@ function Wizard({ mode = "inline", onClose }) {
         if (res.ok) {
           setStep(steps.length);
         } else {
-          setSubmitError("Something went wrong â please try again or email me directly.");
+          setSubmitError("Something went wrong — please try again or email me directly.");
         }
       } catch (e) {
-        setSubmitError("Couldn't send â please check your connection and try again.");
+        setSubmitError("Couldn't send — please check your connection and try again.");
       } finally {
         setSubmitting(false);
       }
@@ -441,11 +441,11 @@ function Wizard({ mode = "inline", onClose }) {
       <div className="container">
         <div className="wizard__inner">
           <div className="wizard__copy reveal">
-            <span className="eyebrow" style={{color: "var(--accent-2)"}}>Realtor + Concierge Â· 2 min</span>
+            <span className="eyebrow" style={{color: "var(--accent-2)"}}>Realtor + Concierge · 2 min</span>
             <h2>Two minutes. A <em>real plan</em> back from a real person.</h2>
             <p>
               Fill this out and I'll personally read it tonight. You'll get a
-              short reply from me within 24 hours â not an automated drip, not a
+              short reply from me within 24 hours — not an automated drip, not a
               round-robin lead pool. Just a next step.
             </p>
             <ul className="wizard__bullets">
@@ -533,7 +533,7 @@ function Wizard({ mode = "inline", onClose }) {
                     <div className="wizard__field">
                       <label>Anything I should know?</label>
                       <textarea
-                        placeholder="Neighborhoods on your list, what you're moving away from, who the move is forâ¦"
+                        placeholder="Neighborhoods on your list, what you're moving away from, who the move is for…"
                         value={(data.contact || {}).note || ""}
                         onChange={(e) => set("contact", { ...(data.contact || {}), note: e.target.value })}
                       />
@@ -547,14 +547,14 @@ function Wizard({ mode = "inline", onClose }) {
                     onClick={back}
                     style={{ visibility: step === 0 ? "hidden" : "visible" }}
                   >
-                    â Back
+                    ← Back
                   </button>
                   <button
                     className="wizard__next"
                     onClick={next}
                     disabled={!canAdvance}
                   >
-                    {isLast ? (submitting ? "Sendingâ¦" : "Send to Aja") : "Continue"} <Icon.arrow />
+                    {isLast ? (submitting ? "Sending…" : "Send to Aja") : "Continue"} <Icon.arrow />
                   </button>
                   {submitError && <p style={{color:"var(--accent-1,#e05)",marginTop:"8px",fontSize:"13px"}}>{submitError}</p>}
                 </div>
@@ -565,11 +565,11 @@ function Wizard({ mode = "inline", onClose }) {
                 <h3>Thank you, {(data.contact || {}).name?.split(" ")[0] || "friend"}.</h3>
                 <p>
                   I've got your note. You'll hear back from me within
-                  24 hours at {(data.contact || {}).email || "your email"} â
+                  24 hours at {(data.contact || {}).email || "your email"} —
                   a short, human reply with a next step.
                 </p>
                 <div className="echo">
-                  {data.intent || "â"} Â· {data.where || "â"} Â· {data.timing || "â"}
+                  {data.intent || "—"} · {data.where || "—"} · {data.timing || "—"}
                 </div>
                 <button
                   type="button"
@@ -605,19 +605,19 @@ function Guides() {
           <div className="guide reveal" style={{ animationDelay: "0.1s" }}>
             <img src="assets/coast-sunset.jpg" alt="Encinitas Guide" />
             <div className="guide__body">
-              <span className="kicker">Guide Â· 48 pages</span>
+              <span className="kicker">Guide · 48 pages</span>
               <h3>The Encinitas Local's Guide</h3>
               <p>Skip the tourist version. This is what living here actually looks like.</p>
-              <a className="cta" href="encinitas-guide.html">Read the guide â</a>
+              <a className="cta" href="encinitas-guide.html">Read the guide →</a>
             </div>
           </div>
           <div className="guide reveal" style={{ animationDelay: "0.2s" }}>
             <img src="assets/home-interior.jpg" alt="Relocation Guide" />
             <div className="guide__body">
-              <span className="kicker">Guide Â· 32 pages</span>
+              <span className="kicker">Guide · 32 pages</span>
               <h3>The Lifestyle Relocation Guide</h3>
               <p>A workbook to figure out exactly where in the U.S. your dream lifestyle actually exists.</p>
-              <a className="cta" href="relocation-workbook.html">Read the guide â</a>
+              <a className="cta" href="relocation-workbook.html">Read the guide →</a>
             </div>
           </div>
         </div>
@@ -632,17 +632,17 @@ function Guides() {
 function Testimonials() {
   const tsts = [
     {
-      q: "Aja didn't just sell our house â she coached us through a move to North Carolina and handed us off to the realtor who found our next home. Zero friction.",
+      q: "Aja didn't just sell our house — she coached us through a move to North Carolina and handed us off to the realtor who found our next home. Zero friction.",
       n: "Sarah & Dan K.",
-      w: "Cardiff â North Carolina",
+      w: "Cardiff → North Carolina",
     },
     {
-      q: "Anyone can pull a listing. Aja told us which Leucadia streets get the real ocean breeze and which ones don't â that's the thing you can't Google.",
+      q: "Anyone can pull a listing. Aja told us which Leucadia streets get the real ocean breeze and which ones don't — that's the thing you can't Google.",
       n: "Marcus W.",
       w: "Leucadia, CA",
     },
     {
-      q: "We closed at $40K over ask in six days. What made the difference was the prep work â Aja was two steps ahead of us the whole time.",
+      q: "We closed at $40K over ask in six days. What made the difference was the prep work — Aja was two steps ahead of us the whole time.",
       n: "The Rivera Family",
       w: "Encinitas, CA",
     },
@@ -700,7 +700,7 @@ function Blog() {
           <span className="eyebrow">Journal</span>
           <div>
             <h2>From the <em>desk</em>.</h2>
-            <p>Market reads, neighborhood walks, and the conversations I have with clients before we tour anything. <a href="blog.html" className="head-link">All posts â</a></p>
+            <p>Market reads, neighborhood walks, and the conversations I have with clients before we tour anything. <a href="blog.html" className="head-link">All posts →</a></p>
           </div>
         </div>
         <div className="blog-grid">
@@ -709,10 +709,10 @@ function Blog() {
               <img src={`assets/${featured.image}`} alt={featured.title} />
             </div>
             <div className="blog-feat__body">
-              <span className="kicker">{featured.kicker} Â· {fmtDate(featured.date)}</span>
+              <span className="kicker">{featured.kicker} · {fmtDate(featured.date)}</span>
               <h3>{featured.title}</h3>
               <p>{featured.excerpt}</p>
-              <span className="cta">Read the post <span className="arr">â</span></span>
+              <span className="cta">Read the post <span className="arr">→</span></span>
             </div>
           </a>
           <div className="blog-list">
@@ -724,7 +724,7 @@ function Blog() {
                 <div className="blog-card__body">
                   <span className="kicker">{p.kicker}</span>
                   <h4>{p.title}</h4>
-                  <span className="meta">{fmtDate(p.date)} Â· {p.readTime} min read</span>
+                  <span className="meta">{fmtDate(p.date)} · {p.readTime} min read</span>
                 </div>
               </a>
             ))}
@@ -744,11 +744,11 @@ function Blog() {
 function FAQ() {
   const [open, setOpen] = useState(0);
   const items = [
-    ["If I'm buying or selling in San Diego, do I work with you directly?", "Yes â me and my team will help you, right here in San Diego."],
-    ["Is the concierge service really free?", "Yes. The concierge introduction is always complimentary to you â when I match you to a Realtor, that Realtor compensates me. You'll never see a bill from me for an introduction."],
-    ["Why don't you just give me a list of agents?", "Because a list is what Google does. I do the part Google can't â knowing which person on that list is the right one for you, today, in this market."],
+    ["If I'm buying or selling in San Diego, do I work with you directly?", "Yes — me and my team will help you, right here in San Diego."],
+    ["Is the concierge service really free?", "Yes. The concierge introduction is always complimentary to you — when I match you to a Realtor, that Realtor compensates me. You'll never see a bill from me for an introduction."],
+    ["Why don't you just give me a list of agents?", "Because a list is what Google does. I do the part Google can't — knowing which person on that list is the right one for you, today, in this market."],
     ["Will you share my info with a network of agents?", "Never. No lead marketplace, no bidding. Your details stay between you, me, and the single Realtor I introduce you to after we talk."],
-    ["What if the Realtor you match me with isn't a fit?", "Tell me. I'll find you someone else â no awkwardness. My reputation rides on the match more than theirs does."],
+    ["What if the Realtor you match me with isn't a fit?", "Tell me. I'll find you someone else — no awkwardness. My reputation rides on the match more than theirs does."],
   ];
   return (
     <section className="section" id="faq" data-screen-label="09 FAQ">
@@ -824,14 +824,14 @@ function Footer() {
         <div className="foot__brand">
           <img src="assets/logo-full.png" alt="Coast Homes by Aja" />
           <p>A real estate concierge service based in San Diego. Serving the California coast directly, and the rest of the country through a hand-curated Realtor network.</p>
-          <p style={{fontSize: 13, opacity: .7}}>RealtorÂ® Â· DRE #01918735 Â· Equal Housing Opportunity</p>
+          <p style={{fontSize: 13, opacity: .7}}>Realtor® · DRE #01918735 · Equal Housing Opportunity</p>
         </div>
         <div className="foot__col">
           <h4>Services</h4>
           <a href="#concierge">Concierge</a>
           <a href="#wizard">Buy with Aja</a>
           <a href="#wizard">Sell with Aja</a>
-          <a href="https://thecoastconcepts.com" target="_blank" rel="noopener noreferrer">Vacation rentals â</a>
+          <a href="https://thecoastconcepts.com" target="_blank" rel="noopener noreferrer">Vacation rentals ↗</a>
         </div>
         <div className="foot__col">
           <h4>Explore</h4>
@@ -849,8 +849,8 @@ function Footer() {
         </div>
       </div>
       <div className="foot__sub">
-        <span>Â© 2026 Coast Homes by Aja</span>
-        <span>Designed on the coast Â· Made with care</span>
+        <span>© 2026 Coast Homes by Aja</span>
+        <span>Designed on the coast · Made with care</span>
       </div>
     </footer>
   );
@@ -869,7 +869,7 @@ function StickyCTA({ onOpenWizard }) {
   }, []);
   return (
     <button className={`stickycta ${visible ? "visible" : ""}`} onClick={onOpenWizard}>
-      <span className="dot" /> Get started Â· 2 min <Icon.arrow />
+      <span className="dot" /> Get started · 2 min <Icon.arrow />
     </button>
   );
 }
