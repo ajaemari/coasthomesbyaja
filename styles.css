@@ -1,5 +1,5 @@
 /* =========================================================
-   Coast Homes by Aja â Redesign
+   Coast Homes by Aja \2014  Redesign
    ========================================================= */
 
 :root {
@@ -10,8 +10,8 @@
   --ink-soft:  #3a4a53;
   --muted:     #7a8890;
   --rule:      #d9d6cc;
-  --accent:    #6fbfa3;   /* logo mint â readable on light bg */
-  --accent-2:  #aedbc0;   /* logo mint â exact, for dark bg italics */
+  --accent:    #6fbfa3;   /* logo mint \2014  readable on light bg */
+  --accent-2:  #aedbc0;   /* logo mint \2014  exact, for dark bg italics */
   --sand:      #d9cdb4;
   --hi:        #ffffff;
   --shadow:    0 30px 80px -40px rgba(15,30,38,.35);
@@ -362,7 +362,7 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
   55%,100% { transform: translateX(100%); }
 }
 
-/* Hero concierge inline CTA bar (primary lead capture) â sits BELOW hero, overlapping upward */
+/* Hero concierge inline CTA bar (primary lead capture) \2014  sits BELOW hero, overlapping upward */
 .hero__cta-wrap {
   position: relative;
   z-index: 5;
@@ -520,7 +520,7 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
 }
 
 /* =========================================================
-   Concierge pitch â photo left with overlay card
+   Concierge pitch \2014  photo left with overlay card
    ========================================================= */
 .concierge {
   display: grid;
@@ -1100,7 +1100,7 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
   margin-top: 8px;
 }
 .guide__body .cta::after {
-  content: "â";
+  content: "\2192 ";
   transition: transform .3s var(--ease);
 }
 .guide:hover .cta::after { transform: translateX(6px); }
@@ -1444,7 +1444,7 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
 }
 .marquee__track span { display: inline-flex; align-items: center; gap: 60px; }
 .marquee__track > span > span::after {
-  content: "â";
+  content: "\274b ";
   font-family: var(--mono);
   color: var(--accent);
   font-size: 16px;
@@ -1957,7 +1957,7 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
   line-height: 1.5;
 }
 .hood__list li::before {
-  content: "â";
+  content: "\2192 ";
   position: absolute;
   left: 0;
   color: var(--accent);
