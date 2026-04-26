@@ -234,7 +234,7 @@ function Concierge({ onOpenWizard }) {
               <a className="btn btn--ghost" href="#about">Meet Aja first</a>
             </div>
             <p className="concierge__readmore">
-              Curious how it works? <a href="post.html?slug=how-the-relocation-concierge-actually-works">Read the full step-by-step →</a>
+              Curious how it works? <a href="#concierge">Read the full step-by-step →</a>
             </p>
           </div>
         </div>
@@ -287,6 +287,16 @@ function Places() {
     { img: "home-interior.jpg", name: "Carlsbad", meta: "92008 · Family", slug: "carlsbad" },
     { img: "coast-sunset.jpg", name: "Oceanside", meta: "92054 · Pier + sand", slug: "oceanside" },
   ];
+  const zillowUrls = {
+    "encinitas": "https://www.zillow.com/encinitas-ca/",
+    "cardiff": "https://www.zillow.com/cardiff-by-the-sea-ca/",
+    "leucadia": "https://www.zillow.com/leucadia-encinitas-ca/",
+    "del-mar": "https://www.zillow.com/del-mar-ca/",
+    "solana-beach": "https://www.zillow.com/solana-beach-ca/",
+    "la-jolla": "https://www.zillow.com/la-jolla-san-diego-ca/",
+    "carlsbad": "https://www.zillow.com/carlsbad-ca/",
+    "oceanside": "https://www.zillow.com/oceanside-ca/",
+  };
   return (
     <section className="section" id="places" data-screen-label="04 Places">
       <div className="container">
@@ -298,7 +308,7 @@ function Places() {
         </div>
         <div className="places reveal">
           {places.map((p) => (
-            <a key={p.name} className="place" href={`neighborhood.html?slug=${p.slug}`}>
+            <a key={p.name} className="place" href={zillowUrls[p.slug] || `https://www.zillow.com/homes/${p.slug}-ca/`} target="_blank" rel="noopener noreferrer">
               <img src={`assets/${p.img}`} alt={p.name} />
               <div className="place__label">
                 <h3>{p.name}</h3>
@@ -608,7 +618,7 @@ function Guides() {
               <span className="kicker">Guide · 48 pages</span>
               <h3>The Encinitas Local's Guide</h3>
               <p>Skip the tourist version. This is what living here actually looks like.</p>
-              <a className="cta" href="encinitas-guide.html">Read the guide →</a>
+              <a className="cta" href="#wizard">Read the guide →</a>
             </div>
           </div>
           <div className="guide reveal" style={{ animationDelay: "0.2s" }}>
@@ -617,7 +627,7 @@ function Guides() {
               <span className="kicker">Guide · 32 pages</span>
               <h3>The Lifestyle Relocation Guide</h3>
               <p>A workbook to figure out exactly where in the U.S. your dream lifestyle actually exists.</p>
-              <a className="cta" href="relocation-workbook.html">Read the guide →</a>
+              <a className="cta" href="#wizard">Read the guide →</a>
             </div>
           </div>
         </div>
@@ -700,7 +710,7 @@ function Blog() {
           <span className="eyebrow">Journal</span>
           <div>
             <h2>From the <em>desk</em>.</h2>
-            <p>Market reads, neighborhood walks, and the conversations I have with clients before we tour anything. <a href="blog.html" className="head-link">All posts →</a></p>
+            <p>Market reads, neighborhood walks, and the conversations I have with clients before we tour anything. <a href="#blog" className="head-link">All posts →</a></p>
           </div>
         </div>
         <div className="blog-grid">
@@ -731,7 +741,7 @@ function Blog() {
           </div>
         </div>
         <div className="blog-allcta">
-          <a className="btn btn--ghost" href="blog.html">Read every post <Icon.arrow /></a>
+          <a className="btn btn--ghost" href="#blog">Read every post <Icon.arrow /></a>
         </div>
       </div>
     </section>
@@ -838,7 +848,7 @@ function Footer() {
           <a href="#about">About Aja</a>
           <a href="#places">Neighborhoods</a>
           <a href="#guides">Free guides</a>
-          <a href="blog.html">Blog</a>
+          <a href="#blog">Blog</a>
         </div>
         <div className="foot__col">
           <h4>Get in touch</h4>
